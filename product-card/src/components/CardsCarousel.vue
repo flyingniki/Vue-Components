@@ -4,7 +4,7 @@
       <h2 class="cards-seen__title">Вы смотрели</h2>
     </div>
     <div class="cards-seen__carousel">
-      <ProductCard v-for="card in cards" />
+      <ProductCard v-for="card in cards" :id="card.id" :card="card" />
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
       cards: [
         {
           id: 1,
-          image: "",
+          image: "../assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -29,7 +29,7 @@ export default {
         },
         {
           id: 2,
-          image: "",
+          image: "../assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: 3,
-          image: "",
+          image: "../assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -45,7 +45,7 @@ export default {
         },
         {
           id: 4,
-          image: "",
+          image: "../assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -53,7 +53,7 @@ export default {
         },
         {
           id: 5,
-          image: "",
+          image: "../assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",

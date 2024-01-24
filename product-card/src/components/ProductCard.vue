@@ -1,12 +1,14 @@
 <template>
   <div class="product-card">
     <div class="product-card__picture card-picture">
-      <img src="../assets/img/Image.png" alt="" class="card-picture__img" />
+      <img :src="card.image" alt="" class="card-picture__img" />
     </div>
     <div class="product-card__description card-description">
-      <h2 class="card-description__title">Mobile SMARTS: Магазин 15 с МОТП</h2>
+      <h2 class="card-description__title">{{ card.title }}</h2>
       <div class="card-description__footer">
-        <p class="card-description__price">12 300 ₽</p>
+        <p class="card-description__price">
+          {{ card.price }} {{ card.currency }}
+        </p>
         <CardButton />
       </div>
     </div>
@@ -22,12 +24,16 @@ export default {
   },
   props: {
     card: {
-      id: Number,
-      image: String,
-      title: String,
-      price: Number,
-      currency: String,
-      isAllowedForPurchase: Boolean,
+      type: Object,
+      default: {
+        id: 3724,
+        image: "https://imgupscaler.com/images/samples/animal-after.webp",
+        title: "Попугайчики",
+        price: 58000,
+        currency: "RUB",
+        isAllowedForPurchase: true,
+      },
+      reqired: false,
     },
   },
 };
