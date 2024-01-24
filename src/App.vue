@@ -1,11 +1,13 @@
 <script>
 import ProductCard from "./components/ProductCard.vue";
 import CardsCarousel from "./components/CardsCarousel.vue";
+import Form from "./components/Form.vue";
 
 export default {
   components: {
     ProductCard,
     CardsCarousel,
+    Form
   },
 };
 </script>
@@ -14,6 +16,7 @@ export default {
   <div class="cart">
     <ProductCard />
     <CardsCarousel />
+    <Form />
   </div>
 </template>
 
