@@ -26,15 +26,18 @@ export default {
     card: {
       type: Object,
       default: {
-        id: 3724,
-        image: "https://imgupscaler.com/images/samples/animal-after.webp",
-        title: "Попугайчики",
-        price: 58000,
-        currency: "RUB",
+        id: 0,
+        image: "../src/assets/img/Image.png",
+        title: "Mobile SMARTS: Магазин 15 с МОТП",
+        price: "12 300",
+        currency: "₽",
         isAllowedForPurchase: true,
       },
       reqired: false,
     },
+  },
+  setup(props) {
+    console.log(props);
   },
 };
 </script>

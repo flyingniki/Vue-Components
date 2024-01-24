@@ -21,7 +21,7 @@ export default {
       cards: [
         {
           id: 1,
-          image: "../assets/img/Image.png",
+          image: "../src/assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -29,7 +29,7 @@ export default {
         },
         {
           id: 2,
-          image: "../assets/img/Image.png",
+          image: "../src/assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: 3,
-          image: "../assets/img/Image.png",
+          image: "../src/assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -45,7 +45,7 @@ export default {
         },
         {
           id: 4,
-          image: "../assets/img/Image.png",
+          image: "../src/assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
@@ -53,7 +53,7 @@ export default {
         },
         {
           id: 5,
-          image: "../assets/img/Image.png",
+          image: "../src/assets/img/Image.png",
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
