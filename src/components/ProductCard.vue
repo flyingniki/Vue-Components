@@ -9,7 +9,7 @@
         <p class="card-description__price">
           {{ card.price }} {{ card.currency }}
         </p>
-        <CardButton />
+        <CardButton :id="card.id" v-if="card.isAllowedForPurchase" />
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
         currency: "₽",
         isAllowedForPurchase: true,
       },
-      reqired: false,
+      required: false,
     },
   },
   setup(props) {

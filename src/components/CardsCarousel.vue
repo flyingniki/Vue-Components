@@ -33,7 +33,7 @@ export default {
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
-          isAllowedForPurchase: true,
+          isAllowedForPurchase: false,
         },
         {
           id: 3,
@@ -49,7 +49,7 @@ export default {
           title: "Mobile SMARTS: Магазин 15 с МОТП",
           price: "12 300",
           currency: "₽",
-          isAllowedForPurchase: true,
+          isAllowedForPurchase: false,
         },
         {
           id: 5,
