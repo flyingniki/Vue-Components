@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <form class="popup-form" action="#" method="post">
-      <h2 class="popup-form__title">Оформление заказа</h2>
-      <ul class="popup-form__list">
-        <li class="popup-form__item text-field">
+    <form class="order-form" action="#" method="post">
+      <h2 class="order-form__title">Данные покупателя</h2>
+      <ul class="order-form__list">
+        <li class="order-form__item text-field">
           <label class="text-field__label" for="name"></label>
           <input
             class="text-field__input"
@@ -13,7 +13,7 @@
             placeholder="Контактное лицо*"
           />
         </li>
-        <li class="popup-form__item text-field">
+        <li class="order-form__item text-field">
           <label class="text-field__label" for="phone"></label>
           <input
             class="text-field__input"
@@ -23,7 +23,7 @@
             placeholder="Телефон*"
           />
         </li>
-        <li class="popup-form__item text-field">
+        <li class="order-form__item text-field">
           <label class="text-field__label" for="description"></label>
           <input
             class="text-field__input"
@@ -33,7 +33,7 @@
             placeholder="ИНН"
           />
         </li>
-        <li class="popup-form__item text-field">
+        <li class="order-form__item text-field">
           <label class="text-field__label" for="email"></label>
           <input
             class="text-field__input"
@@ -44,7 +44,7 @@
           />
         </li>
         <!-- drag & drop start -->
-        <li class="popup-form__item drag-n-drop">
+        <li class="order-form__item drag-n-drop">
           <div class="drag-n-drop__container" id="fileinput">
             <img
               class="drag-n-drop__img"
@@ -67,7 +67,7 @@
           </div>
         </li>
         <!-- drag & drop end -->
-        <li class="popup-form__item comment-area">
+        <li class="order-form__item comment-area">
           <textarea
             class="comment-area__field"
             name="comment"
@@ -78,8 +78,8 @@
           ></textarea>
         </li>
       </ul>
-      <!-- <div class="popup-form__send">
-        <button class="popup-form__button" type="submit">
+      <!-- <div class="order-form__send">
+        <button class="order-form__button" type="submit">
           Отправить заявку
         </button>
       </div> -->
@@ -101,7 +101,7 @@ export default {};
   display: none;
 }
 
-.popup-form {
+.order-form {
   box-sizing: border-box;
   width: 1032px;
   margin: 0 auto;
@@ -110,13 +110,13 @@ export default {};
   border-radius: 15px;
 }
 
-.popup-form__title {
+.order-form__title {
   margin: 0;
   margin-bottom: 19px;
   font-size: 25px;
 }
 
-.popup-form__list {
+.order-form__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -125,15 +125,15 @@ export default {};
   grid-gap: 16px;
 }
 
-.popup-form__item {
+.order-form__item {
   width: 476px;
 }
 
-.popup-form__item:nth-child(5) {
+.order-form__item:nth-child(5) {
   grid-column: 1 / 3;
 }
 
-.popup-form__item:nth-child(6) {
+.order-form__item:nth-child(6) {
   grid-column: 1 / 3;
   width: 100%;
 }
