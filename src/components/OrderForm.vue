@@ -178,6 +178,7 @@ export default {};
   resize: none;
   box-sizing: border-box;
   padding: 13px 16px;
+  color: #47bfc7;
 }
 
 .comment-area__field::placeholder {
