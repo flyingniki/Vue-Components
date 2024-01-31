@@ -1,11 +1,11 @@
 <template>
-  <div class="delivery-card">
+  <div class="delivery-card" :class="{ active: delivery.isActive }">
     <h3 class="delivery-card__title">{{ delivery.title }}</h3>
     <p class="delivery-card__info">{{ delivery.info }}</p>
     <div class="delivery-card__selection">
       <img :src="delivery.image" alt="" class="delivery-card__img" />
-      <button class="delivery-card__button" @click="btnSelect">
-        {{ delivery.isActive }}
+      <button class="delivery-card__button">
+        {{ delivery.isActive ? "Выбрано" : "Выбрать" }}
       </button>
     </div>
   </div>
@@ -22,17 +22,8 @@ export default {
         title: "Delivery title",
         info: "Delivery info",
         image: "../src/assets/img/self.png",
-        isActive: "Change",
+        isActive: false,
       },
-    },
-  },
-  computed: {
-    cardBackground() {},
-    linkValue() {},
-  },
-  methods: {
-    btnSelect() {
-      this.$emit("typeSelect");
     },
   },
 };
@@ -50,6 +41,10 @@ export default {
   border: 1px solid #47bfc7;
   border-radius: 15px;
   padding: 24px 12px 17px 16px;
+}
+
+.active {
+  background-color: #edfcff;
 }
 
 .delivery-card__title {

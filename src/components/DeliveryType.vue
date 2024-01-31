@@ -6,7 +6,7 @@
         v-for="delivery in deliveries"
         :id="delivery.id"
         :delivery="delivery"
-        @type-select="changeStateHandler"
+        @click="btnSelect(delivery.id)"
       />
     </div>
     <div class="delivery-type__contacts contacts">
@@ -58,28 +58,31 @@ export default {
           title: "Самовывоз",
           info: "Бесплатно",
           image: "../src/assets/img/self.png",
-          isActive: "Выбрано",
+          isActive: true,
         },
         {
           id: 1,
           title: "Курьером по Москве и МО",
           info: "Бесплатно при заказе от 30 000 ₽ ",
           image: "../src/assets/img/self.png",
-          isActive: "Выбрать",
+          isActive: false,
         },
         {
           id: 2,
           title: "Доставка по регионам РФ",
           info: "Стоимость рассчитывается на этапе подтверждения заказа",
           image: "../src/assets/img/self.png",
-          isActive: "Выбрано",
+          isActive: false,
         },
       ],
     };
   },
   methods: {
-    changeStateHandler() {
-      console.log('test');
+    btnSelect(id) {
+      this.deliveries.forEach((delivery) => {
+        delivery.isActive = false;
+      });
+      this.deliveries[id].isActive = true;
     },
   },
 };
