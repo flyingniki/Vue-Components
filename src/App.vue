@@ -4,6 +4,7 @@ import CardsCarousel from "./components/CardsCarousel.vue";
 import OrderForm from "./components/OrderForm.vue";
 import DeliveryCard from "./components/DeliveryCard.vue";
 import DeliveryType from "./components/DeliveryType.vue";
+import PopupMessage from "./components/PopupMessage.vue";
 
 export default {
   components: {
@@ -11,7 +12,8 @@ export default {
     CardsCarousel,
     OrderForm,
     DeliveryCard,
-    DeliveryType
+    DeliveryType,
+    PopupMessage
   },
 };
 </script>
@@ -27,6 +29,8 @@ export default {
     <DeliveryCard />
     <div class="separator"></div>
     <DeliveryType />
+    <div class="separator"></div>
+    <PopupMessage />
   </div>
 </template>
 
