@@ -1,20 +1,3 @@
-<template>
-  <div class="product-card">
-    <div class="product-card__picture card-picture">
-      <img :src="card.image" alt="" class="card-picture__img" />
-    </div>
-    <div class="product-card__description card-description">
-      <h2 class="card-description__title">{{ card.title }}</h2>
-      <div class="card-description__footer">
-        <p class="card-description__price">
-          {{ card.price }} {{ card.currency }}
-        </p>
-        <CardButton :id="card.id" v-if="card.isAllowedForPurchase" />
-      </div>
-    </div>
-  </div>
-</template>
-
 <script>
 import CardButton from "./ui/CardButton.vue";
 
@@ -42,7 +25,24 @@ export default {
 };
 </script>
 
-<style>
+<template>
+  <div class="product-card">
+    <div class="product-card__picture card-picture">
+      <img :src="card.image" alt="" class="card-picture__img" />
+    </div>
+    <div class="product-card__description card-description">
+      <h2 class="card-description__title">{{ card.title }}</h2>
+      <div class="card-description__footer">
+        <p class="card-description__price">
+          {{ card.price }} {{ card.currency }}
+        </p>
+        <CardButton :id="card.id" v-if="card.isAllowedForPurchase" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="sass" scoped>
 .product-card {
   margin: 0 auto;
   width: 318px;

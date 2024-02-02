@@ -1,16 +1,3 @@
-<template>
-  <div class="delivery-card" :class="{ active: delivery.isActive }">
-    <h3 class="delivery-card__title">{{ delivery.title }}</h3>
-    <p class="delivery-card__info">{{ delivery.info }}</p>
-    <div class="delivery-card__selection">
-      <img :src="delivery.image" alt="" class="delivery-card__img" />
-      <button class="delivery-card__button">
-        {{ delivery.isActive ? "Выбрано" : "Выбрать" }}
-      </button>
-    </div>
-  </div>
-</template>
-
 <script>
 export default {
   props: {
@@ -28,7 +15,20 @@ export default {
 };
 </script>
 
-<style>
+<template>
+  <div class="delivery-card" :class="{ active: delivery.isActive }">
+    <h3 class="delivery-card__title">{{ delivery.title }}</h3>
+    <p class="delivery-card__info">{{ delivery.info }}</p>
+    <div class="delivery-card__selection">
+      <img :src="delivery.image" alt="" class="delivery-card__img" />
+      <button class="delivery-card__button">
+        {{ delivery.isActive ? "Выбрано" : "Выбрать" }}
+      </button>
+    </div>
+  </div>
+</template>
+
+<style lang="sass" scoped>
 .delivery-card {
   display: flex;
   flex-direction: column;

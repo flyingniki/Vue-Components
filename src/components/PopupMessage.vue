@@ -1,3 +1,18 @@
+<script>
+export default {
+  data() {
+    return {
+        hidden: false,
+    };
+  },
+  methods: {
+    popupClose() {
+      this.hidden = true;
+    },
+  },
+};
+</script>
+
 <template>
   <div class="popup-message" :class="{ hidden: hidden }">
     <h2 class="popup-message__title">Бесплатная доставка по Москве</h2>
@@ -18,22 +33,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-        hidden: false,
-    };
-  },
-  methods: {
-    popupClose() {
-      this.hidden = true;
-    },
-  },
-};
-</script>
-
-<style>
+<style lang="sass" scoped>
 .popup-message {
   width: 100%;
   height: 80px;

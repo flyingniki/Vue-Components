@@ -34,7 +34,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style lang="sass" scoped>
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 
 * {

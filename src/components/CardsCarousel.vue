@@ -1,14 +1,3 @@
-<template>
-  <div class="cards-seen">
-    <div class="cards-seen__info">
-      <h2 class="cards-seen__title">Вы смотрели</h2>
-    </div>
-    <div class="cards-seen__carousel">
-      <ProductCard v-for="card in cards" :id="card.id" :card="card" />
-    </div>
-  </div>
-</template>
-
 <script>
 import ProductCard from "./ProductCard.vue";
 
@@ -65,7 +54,18 @@ export default {
 };
 </script>
 
-<style>
+<template>
+  <div class="cards-seen">
+    <div class="cards-seen__info">
+      <h2 class="cards-seen__title">Вы смотрели</h2>
+    </div>
+    <div class="cards-seen__carousel">
+      <ProductCard v-for="card in cards" :id="card.id" :card="card" />
+    </div>
+  </div>
+</template>
+
+<style lang="sass" scoped>
 .cards-seen__title {
   margin: 0;
   font-weight: 500;

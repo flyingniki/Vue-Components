@@ -1,3 +1,7 @@
+<script>
+export default {};
+</script>
+
 <template>
   <div class="container">
     <form class="order-form" action="#" method="post">
@@ -87,11 +91,7 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
-<style>
+<style lang="sass" scoped>
 * {
   font-size: 14px;
   line-height: 145%;
