@@ -13,7 +13,7 @@ export default {
     OrderForm,
     DeliveryCard,
     DeliveryType,
-    PopupMessage
+    PopupMessage,
   },
 };
 </script>
@@ -35,14 +35,12 @@ export default {
 </template>
 
 <style lang="sass" scoped>
-@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.cdnfonts.com/css/montserrat")
 
-* {
-  font-family: "Montserrat", sans-serif;
-  color: #141212;
-}
-
-.separator {
-  height: 20px;
-}
+*
+  font-family: "Montserrat", sans-serif
+  color: #141212
+  font-weight: 400
+.separator
+  height: 20px
 </style>

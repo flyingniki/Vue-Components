@@ -38,49 +38,33 @@ export default {};
 </template>
 
 <style lang="sass" scoped>
-.contacts {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contacts__item {
-  margin: 0;
-  margin-bottom: 4px;
-  font-size: 16px;
-  line-height: 135%;
-  font-weight: 400;
-}
-
-.contacts__item-name {
-  font-size: 16px;
-  line-height: 145%;
-  font-weight: 500;
-}
-
-.contacts__footnote {
-  margin-top: 41px;
-}
-
-.footnote {
-  display: flex;
-  align-items: center;
-}
-
-.footnote__img {
-  margin-right: 10px;
-}
-
-.footnote__text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 135%;
-  font-weight: 500;
-}
-
-.contacts__card-frame {
-  width: 100%;
-  height: auto;
-  border: none;
-  border-radius: 15px;
-}
+.contacts
+  display: flex
+  justify-content: space-between
+.contacts__item
+  margin: 0
+  margin-bottom: 4px
+  font-size: 16px
+  line-height: 135%
+  font-weight: 400
+.contacts__item-name
+  font-size: 16px
+  line-height: 145%
+  font-weight: 500
+.contacts__footnote
+  margin-top: 41px
+  display: flex
+  align-items: center
+.footnote__img
+  margin-right: 10px
+.footnote__text
+  margin: 0
+  font-size: 16px
+  line-height: 135%
+  font-weight: 500
+.contacts__card-frame
+  width: 100%
+  height: auto
+  border: none
+  border-radius: 15px
 </style>

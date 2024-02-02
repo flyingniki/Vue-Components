@@ -22,9 +22,8 @@ export default {
 </template>
 
 <style lang="sass" scoped>
-.card-description__button {
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-}
+.card-description__button
+  width: 44px
+  height: 44px
+  cursor: pointer
 </style>

@@ -58,28 +58,23 @@ export default {
 </template>
 
 <style lang="sass" scoped>
-.delivery-type {
-  box-sizing: border-box;
-  width: 1032px;
-  height: 513px;
-  margin: 0 auto;
-  padding: 30px 32px 34px;
-  border: 1px solid #d5d5d5;
-  border-radius: 15px;
-}
-
-.delivery-type__title {
-  margin: 0;
-  margin-bottom: 24px;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 145%;
-}
-
-.delivery-type__block {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 16px;
-  margin-bottom: 39px;
-}
+.delivery-type
+  box-sizing: border-box
+  width: 1032px
+  height: 513px
+  margin: 0 auto
+  padding: 30px 32px 34px
+  border: 1px solid #d5d5d5
+  border-radius: 15px
+.delivery-type__title
+  margin: 0
+  margin-bottom: 24px
+  font-size: 25px
+  font-weight: 500
+  line-height: 145%
+.delivery-type__block
+  display: flex
+  justify-content: space-between
+  column-gap: 16px
+  margin-bottom: 39px
 </style>

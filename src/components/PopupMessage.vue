@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-        hidden: false,
+      hidden: false,
     };
   },
   methods: {
@@ -34,39 +34,28 @@ export default {
 </template>
 
 <style lang="sass" scoped>
-.popup-message {
-  width: 100%;
-  height: 80px;
-  margin: 0 auto;
-}
-
-.hidden {
-  display: none;
-}
-
-.popup-message__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(270deg, #60f8d6, #0b95ff);
-  box-sizing: border-box;
-  padding: 27px auto;
-}
-
-.popup-message__title {
-  margin: 0;
-}
-
+.popup-message
+  width: 100%
+  height: 80px
+  margin: 0 auto
+.hidden
+  display: none
+.popup-message__content
+  display: flex
+  justify-content: center
+  align-items: center
+  background: linear-gradient(270deg, #60f8d6, #0b95ff)
+  box-sizing: border-box
+  padding: 27px auto
+.popup-message__title
+  margin: 0
 .popup-message__text,
-.popup-message__link {
-  margin-right: 16px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 135%;
-}
-
-.popup-message__close {
-  width: 32px;
-  height: 32px;
-}
+.popup-message__link
+  margin-right: 16px
+  font-size: 20px
+  font-weight: 500
+  line-height: 135%
+.popup-message__close
+  width: 32px
+  height: 32px
 </style>
