@@ -21,7 +21,7 @@ export default {
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .card-description__button
   width: 44px
   height: 44px

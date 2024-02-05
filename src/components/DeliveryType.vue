@@ -1,9 +1,16 @@
 <script>
 import DeliveryCard from "./DeliveryCard.vue";
+import DeliveryCourier from "./DeliveryCourier.vue";
 import DeliveryPickup from "./DeliveryPickup.vue";
+import DeliveryRegionVue from "./DeliveryRegion.vue";
 
 export default {
-  components: { DeliveryCard, DeliveryPickup },
+  components: {
+    DeliveryCard,
+    DeliveryPickup,
+    DeliveryCourier,
+    DeliveryRegionVue,
+  },
   data() {
     return {
       deliveries: [
@@ -53,25 +60,28 @@ export default {
         @click="btnSelect(delivery.id)"
       />
     </div>
-    <DeliveryPickup />
+    <DeliveryPickup v-show="show" />
+    <DeliveryCourier v-show="show" />
+    <DeliveryRegionVue v-show="show" />
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .delivery-type
   box-sizing: border-box
   width: 1032px
-  height: 513px
   margin: 0 auto
-  padding: 30px 32px 34px
+  padding: 32px
   border: 1px solid #d5d5d5
   border-radius: 15px
+
 .delivery-type__title
   margin: 0
   margin-bottom: 24px
   font-size: 25px
   font-weight: 500
   line-height: 145%
+
 .delivery-type__block
   display: flex
   justify-content: space-between

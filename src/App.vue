@@ -34,13 +34,14 @@ export default {
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 @import url("https://fonts.cdnfonts.com/css/montserrat")
 
 *
   font-family: "Montserrat", sans-serif
   color: #141212
   font-weight: 400
+  
 .separator
   height: 20px
 </style>

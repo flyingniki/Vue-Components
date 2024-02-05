@@ -65,12 +65,13 @@ export default {
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .cards-seen__title
   margin: 0
   font-weight: 500
   font-size: 25px
   line-height: 145%
+  
 .cards-seen__carousel
   display: flex
   column-gap: 8px

@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-  <div class="delivery-type__details contacts">
+  <div class="contacts">
     <div class="contacts__info">
       <p class="contacts__item">
         <span class="contacts__item-name">Адрес склада:&nbsp;</span>г. Москва,
@@ -37,31 +37,37 @@ export default {};
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 .contacts
   display: flex
   justify-content: space-between
+
 .contacts__item
   margin: 0
   margin-bottom: 4px
   font-size: 16px
   line-height: 135%
   font-weight: 400
+
 .contacts__item-name
   font-size: 16px
   line-height: 145%
   font-weight: 500
+
 .contacts__footnote
   margin-top: 41px
   display: flex
   align-items: center
+
 .footnote__img
   margin-right: 10px
+
 .footnote__text
   margin: 0
   font-size: 16px
   line-height: 135%
   font-weight: 500
+  
 .contacts__card-frame
   width: 100%
   height: auto
