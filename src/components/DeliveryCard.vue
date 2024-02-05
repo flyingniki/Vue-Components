@@ -29,6 +29,9 @@ export default {
 </template>
 
 <style lang="sass">
+.active
+  background-color: #edfcff
+
 .delivery-card
   display: flex
   flex-direction: column
@@ -41,31 +44,28 @@ export default {
   border-radius: 15px
   padding: 24px 12px 17px 16px
 
-.active
-  background-color: #edfcff
+  &__title
+    margin: 0
+    margin-bottom: 8px
+    font-size: 16px
+    line-height: 145%
+    font-weight: 600
 
-.delivery-card__title
-  margin: 0
-  margin-bottom: 8px
-  font-size: 16px
-  line-height: 145%
-  font-weight: 600
+  &__info
+    margin: 0
+    padding: 0
+    margin-bottom: 36px
 
-.delivery-card__info
-  margin: 0
-  padding: 0
-  margin-bottom: 36px
-
-.delivery-card__selection
-  display: flex
-  justify-content: space-between
-  align-items: end
-  
-.delivery-card__button
-  color: #47bfc7
-  font-size: 16px
-  font-weight: 500
-  border: none
-  background-color: transparent
-  cursor: pointer
+  &__selection
+    display: flex
+    justify-content: space-between
+    align-items: end
+    
+  &__button
+    color: #47bfc7
+    font-size: 16px
+    font-weight: 500
+    border: none
+    background-color: transparent
+    cursor: pointer
 </style>

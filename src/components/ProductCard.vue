@@ -49,37 +49,38 @@ export default {
   border: 1px solid #d5d5d5
   border-radius: 15px
 
-.product-card__picture
-  padding: 7px 28px 22px
-  background-color: #eeeef8
-  border-radius: 15px 15px 0 0
+  &__picture
+    padding: 7px 28px 22px
+    background-color: #eeeef8
+    border-radius: 15px 15px 0 0
+
+  &__description
+    box-sizing: border-box
+    height: 195px
+    border-radius: 0 0 15px 15px
+    padding: 32px
 
 .card-picture__img
   width: 100%
 
-.product-card__description
-  box-sizing: border-box
-  height: 195px
-  border-radius: 0 0 15px 15px
-  padding: 32px
+.card-description
+  &__title
+    margin: 0
+    margin-bottom: 8px
+    max-width: 274px
+    height: 74px
+    font-weight: 500
+    font-size: 16px
+    line-height: 135%
 
-.card-description__title
-  margin: 0
-  margin-bottom: 8px
-  max-width: 274px
-  height: 74px
-  font-weight: 500
-  font-size: 16px
-  line-height: 135%
-
-.card-description__footer
-  display: flex
-  justify-content: space-between
-  align-items: end
-  
-.card-description__price
-  margin: 0
-  font-weight: 600
-  font-size: 24px
-  line-height: 130%
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: end
+    
+  &__price
+    margin: 0
+    font-weight: 600
+    font-size: 24px
+    line-height: 130%
 </style>

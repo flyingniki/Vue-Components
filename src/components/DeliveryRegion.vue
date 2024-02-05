@@ -83,52 +83,54 @@ export default {};
 </template>
 
 <style lang="sass">
-.address-form-container
-  width: 968px
+.address-form
+  &-container
+    width: 968px
 
-.address-form__title
-  margin: 0
-  margin-bottom: 16px
-  font-size: 20px
-  font-weight: 600
+  &__title
+    margin: 0
+    margin-bottom: 16px
+    font-size: 20px
+    font-weight: 600
 
-.address-form__list
-  list-style: none
-  margin: 0
-  padding: 0
-  display: flex
-  flex-wrap: wrap
-  gap: 16px
-  justify-content: space-between
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    gap: 16px
+    justify-content: space-between
 
-.address-form__item
-  width: 476px
+  &__item
+    width: 476px
 
-.address-form__item:nth-child(3)
-  width: 230px
+    &:nth-child(3)
+      width: 230px
 
-.address-form__item:nth-child(4)
-  width: 230px
+    &:nth-child(4)
+      width: 230px
 
-.address-form__item:nth-child(5)
-  width: 230px
+    &:nth-child(5)
+      width: 230px
 
-.address-form__item:nth-child(6)
-  width: 230px
+    &:nth-child(6)
+      width: 230px
 
-.address-form__item:nth-child(7)
-  width: 968px
+    &:nth-child(7)
+      width: 968px
 
-.text-field__input
-  box-sizing: border-box
-  background-color: #edfcff
-  width: 100%
-  height: 46px
-  border: 1px solid #47bfc7
-  border-radius: 10px
-  padding: 13px 16px
-  color: #47bfc7
+.text-field
+  &__input
+    box-sizing: border-box
+    background-color: #edfcff
+    width: 100%
+    height: 46px
+    border: 1px solid #47bfc7
+    border-radius: 10px
+    padding: 13px 16px
+    color: #47bfc7
 
-.text-field__input::placeholder
-  color: #47bfc7
+    &::placeholder
+      color: #47bfc7
 </style>

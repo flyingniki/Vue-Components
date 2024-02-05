@@ -34,33 +34,33 @@ export default {
 </template>
 
 <style lang="sass">
+.hidden
+  display: none
+
 .popup-message
   width: 100%
   height: 80px
   margin: 0 auto
 
-.hidden
-  display: none
+  &__content
+    display: flex
+    justify-content: center
+    align-items: center
+    background: linear-gradient(270deg, #60f8d6, #0b95ff)
+    box-sizing: border-box
+    padding: 27px auto
 
-.popup-message__content
-  display: flex
-  justify-content: center
-  align-items: center
-  background: linear-gradient(270deg, #60f8d6, #0b95ff)
-  box-sizing: border-box
-  padding: 27px auto
+  &__title
+    margin: 0
 
-.popup-message__title
-  margin: 0
-
-.popup-message__text,
-.popup-message__link
-  margin-right: 16px
-  font-size: 20px
-  font-weight: 500
-  line-height: 135%
-  
-.popup-message__close
-  width: 32px
-  height: 32px
+  &__text,
+  &__link
+    margin-right: 16px
+    font-size: 20px
+    font-weight: 500
+    line-height: 135%
+    
+  &__close
+    width: 32px
+    height: 32px
 </style>

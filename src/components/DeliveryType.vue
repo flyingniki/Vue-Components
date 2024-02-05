@@ -44,6 +44,7 @@ export default {
         delivery.isActive = false;
       });
       this.deliveries[id].isActive = true;
+      console.log(id);
     },
   },
 };
@@ -60,9 +61,9 @@ export default {
         @click="btnSelect(delivery.id)"
       />
     </div>
-    <DeliveryPickup v-show="show" />
-    <DeliveryCourier v-show="show" />
-    <DeliveryRegionVue v-show="show" />
+    <DeliveryPickup v-show="deliveries[0].isActive" />
+    <DeliveryCourier v-show="deliveries[1].isActive" />
+    <DeliveryRegionVue v-show="deliveries[2].isActive" />
   </div>
 </template>
 
@@ -75,16 +76,17 @@ export default {
   border: 1px solid #d5d5d5
   border-radius: 15px
 
-.delivery-type__title
-  margin: 0
-  margin-bottom: 24px
-  font-size: 25px
-  font-weight: 500
-  line-height: 145%
+  &__title
+    margin: 0
+    margin-bottom: 24px
+    font-size: 25px
+    font-weight: 500
+    line-height: 145%
 
-.delivery-type__block
-  display: flex
-  justify-content: space-between
-  column-gap: 16px
-  margin-bottom: 39px
+
+  &__block
+    display: flex
+    justify-content: space-between
+    column-gap: 16px
+    margin-bottom: 39px
 </style>
