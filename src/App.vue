@@ -1,9 +1,9 @@
 <script>
-import ProductCard from "./components/ProductCard.vue";
-import CardsCarousel from "./components/CardsCarousel.vue";
-import OrderForm from "./components/OrderForm.vue";
-import DeliveryCard from "./components/DeliveryCard.vue";
-import DeliveryType from "./components/DeliveryType.vue";
+import ProductCard from "./components/products/ProductCard.vue";
+import CardsCarousel from "./components/products/CardsCarousel.vue";
+import OrderForm from "./components/customer/OrderForm.vue";
+import DeliveryCard from "./components/delivery/DeliveryCard.vue";
+import DeliveryType from "./components/delivery/DeliveryType.vue";
 import PopupMessage from "./components/PopupMessage.vue";
 
 export default {
@@ -20,13 +20,9 @@ export default {
 
 <template>
   <div class="cart">
-    <ProductCard />
-    <div class="separator"></div>
     <CardsCarousel />
     <div class="separator"></div>
     <OrderForm />
-    <div class="separator"></div>
-    <DeliveryCard />
     <div class="separator"></div>
     <DeliveryType />
     <div class="separator"></div>

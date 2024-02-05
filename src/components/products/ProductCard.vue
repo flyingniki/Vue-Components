@@ -1,5 +1,5 @@
 <script>
-import CardButton from "./ui/CardButton.vue";
+import CardButton from "../ui/CardButton.vue";
 
 export default {
   components: {

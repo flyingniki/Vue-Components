@@ -52,7 +52,7 @@ export default {};
           <div class="drag-n-drop__container" id="fileinput">
             <img
               class="drag-n-drop__img"
-              src="../assets/img/clip.svg"
+              src="../../assets/img/clip.svg"
               alt="clip"
             />
             <div class="drag-n-drop__field">
