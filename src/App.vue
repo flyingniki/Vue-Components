@@ -5,6 +5,7 @@ import OrderForm from "./components/customer/OrderForm.vue";
 import DeliveryCard from "./components/delivery/DeliveryCard.vue";
 import DeliveryType from "./components/delivery/DeliveryType.vue";
 import PopupMessage from "./components/PopupMessage.vue";
+import Basket from "./components/basket/Basket.vue";
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     DeliveryCard,
     DeliveryType,
     PopupMessage,
+    Basket,
   },
 };
 </script>
@@ -27,6 +29,8 @@ export default {
     <DeliveryType />
     <div class="separator"></div>
     <PopupMessage />
+    <div class="separator"></div>
+    <Basket />
   </div>
 </template>
 
@@ -37,7 +41,7 @@ export default {
   font-family: "Montserrat", sans-serif
   color: #141212
   font-weight: 400
-  
+
 .separator
   height: 20px
 </style>

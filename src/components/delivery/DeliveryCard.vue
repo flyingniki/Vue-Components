@@ -17,8 +17,10 @@ export default {
 
 <template>
   <div class="delivery-card" :class="{ active: delivery.isActive }">
-    <h3 class="delivery-card__title">{{ delivery.title }}</h3>
-    <p class="delivery-card__info">{{ delivery.info }}</p>
+    <div class="delivery-card__description">
+      <h3 class="delivery-card__title">{{ delivery.title }}</h3>
+      <p class="delivery-card__info">{{ delivery.info }}</p>
+    </div>
     <div class="delivery-card__selection">
       <img :src="delivery.image" alt="" class="delivery-card__img" />
       <button class="delivery-card__button">
@@ -54,13 +56,12 @@ export default {
   &__info
     margin: 0
     padding: 0
-    margin-bottom: 36px
 
   &__selection
     display: flex
     justify-content: space-between
     align-items: end
-    
+
   &__button
     color: #47bfc7
     font-size: 16px
